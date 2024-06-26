@@ -13,15 +13,13 @@ else:
         print("Invalid response for time-bound. Please enter 'yes' or 'no'.")
     else:
         # Process the task based on priority and time sensitivity
-        reminder = f"Reminder: '{task}' is a {priority} priority task"
-        
         match priority:
             case 'high':
-                reminder += " that requires immediate attention!"
+                reminder = f"Reminder: '{task}' is a high priority task that requires immediate attention!"
             case 'medium':
-                reminder += ". Try to complete it soon."
+                reminder = f"Reminder: '{task}' is a medium priority task. Try to complete it soon."
             case 'low':
-                reminder += ". Consider completing it when you have free time."
+                reminder = f"Reminder: '{task}' is a low priority task. Consider completing it when you have free time."
         
         # Modify the reminder if the task is time-bound
         if time_bound == 'yes':
