@@ -26,4 +26,4 @@ else:
             reminder += " Don't forget, it needs to be done today!"
         
         # Print the customized reminder
-        print(reminder)
+        print("Reminder:", reminder)
