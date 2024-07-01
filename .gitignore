@@ -469,3 +469,4 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 .env
+fns_and_dsa/main.py
